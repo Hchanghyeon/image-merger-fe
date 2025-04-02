@@ -1,0 +1,171 @@
+/* 기본 리셋 및 배경 */
+body {
+  margin: 0;
+  padding: 0;
+  background: #ffffff;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* 컨테이너: 중앙 정렬, 흰색 배경, 그림자 효과 */
+.container {
+  padding: 20px;
+  max-width: 900px;
+  margin: 20px auto;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* 타이틀 */
+.title {
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* 설정 영역 */
+.panel {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  background: #f7f7f7;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+/* 모바일 대응: 600px 이하일 경우 1열 */
+@media (max-width: 600px) {
+  .panel {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* 드래그 영역 */
+.dropArea {
+  border: 2px dashed #ccc;
+  padding: 30px;
+  text-align: center;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  background: #fafafa;
+  color: #666;
+}
+
+/* 파일 리스트 */
+.fileList {
+  margin-bottom: 20px;
+}
+
+.fileListTitle {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.fileItems {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.fileItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fefefe;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.05);
+}
+
+.fileName {
+  flex: 1;
+  word-break: break-word;
+}
+
+.fileDetails {
+  min-width: 180px;
+  text-align: right;
+  color: #555;
+}
+
+/* 개별 간격 */
+.gaps {
+  margin-top: 15px;
+}
+
+.gapsLabel {
+  color: #333;
+}
+
+.gapsInputs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-top: 5px;
+}
+
+/* 공통 입력 스타일 */
+.input {
+  width: 100%;
+  height: 36px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  box-sizing: border-box;
+}
+
+/* 작은 입력 필드 */
+.smallInput {
+  width: 60px;
+}
+
+/* 설정 컴포넌트 */
+.setting {
+  display: flex;
+  flex-direction: column;
+}
+
+.settingLabel {
+  margin-bottom: 5px;
+  color: #333;
+}
+
+/* 저장 버튼 */
+.button {
+  margin-top: 20px;
+  padding: 12px 20px;
+  font-size: 16px;
+  width: 100%;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #45a049;
+}
+
+/* 진행률 표시 */
+.progressContainer {
+  margin-top: 10px;
+}
+
+.progressBar {
+  width: 100%;
+  height: 10px;
+  background: #eee;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-top: 5px;
+}
+
+.progress {
+  height: 100%;
+  background: #4caf50;
+  transition: width 0.3s;
+}
